@@ -1,4 +1,4 @@
-__pycache__/
+**pycache**/
 *.py[cod]
 
 .venv/
@@ -19,3 +19,4 @@ logs/
 
 data/control/ingestion_log.csv
 data/control/ingestion_log.lock
+data/control/watermark.csv
