@@ -1,0 +1,16 @@
+hospital_id,hospital_name,city,state,hospital_type,created_at
+H000001,Hospital da Mata São Paulo,Correia,AP,Hospital Especializado,2026-09-22T09:20:50
+H000002,Hospital Dias São Paulo,Alves,RO,Hospital Especializado,2025-11-16T14:05:48
+H000003,Hospital Brito Vida,Moreira,MS,Hospital Geral,2025-07-26T20:36:07
+H000004,Hospital Pires Central,Aparecida do Amparo,SE,Hospital Especializado,2026-08-07T14:48:35
+H000005,Hospital Castro Regional,Cavalcanti do Sul,AP,Hospital Universitário,2026-02-22T18:11:33
+H000006,Hospital Azevedo São Paulo,Cunha,SP,Hospital Especializado,2025-02-27T17:16:04
+H000007,Hospital Moura Regional,Caldeira de Vargas,RR,Hospital Especializado,2025-12-16T19:52:35
+H000008,Hospital da Mota São Paulo,Nogueira,SE,Hospital Geral,2025-03-15T23:23:49
+H000009,Hospital Viana Regional,Macedo,RS,Hospital Especializado,2025-10-22T14:29:50
+H000010,Hospital da Cunha Vida,Fernandes do Galho,AL,Hospital Especializado,2026-03-16T19:26:50
+H000011,Hospital Souza São Paulo,Jesus,RR,Hospital Geral,2025-01-20T06:13:14
+H000012,Hospital Dias Santa Casa,Montenegro das Pedras,SP,Hospital Universitário,2024-11-06T20:59:20
+H000013,Hospital Nogueira Vida,Fonseca do Campo,SE,Hospital Geral,2026-08-30T21:42:45
+H000014,Hospital Cassiano Central,Fogaça do Amparo,MT,Hospital Universitário,2025-01-11T00:12:03
+H000015,Hospital Rocha São Paulo,Moura,RN,Hospital Universitário,2025-09-30T19:03:03
