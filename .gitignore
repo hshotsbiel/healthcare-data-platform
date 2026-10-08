@@ -18,3 +18,4 @@ venv/
 logs/
 
 data/control/ingestion_log.csv
+data/control/ingestion_log.lock
