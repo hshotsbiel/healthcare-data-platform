@@ -35,7 +35,7 @@ def ingest_csv(
 
         rows_read = len(rows)
 
-        shutil.copy2(
+        shutil.copyfile(
             source_file,
             target_file,
         )
