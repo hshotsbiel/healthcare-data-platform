@@ -3,7 +3,7 @@ from pathlib import Path
 from src.utils.ingestion import ingest_csv
 
 
-def test_reprocess_does_not_duplicate_records(tmp_path):
+def test_reprocess_does_not_duplicate_records(tmp_path, monkeypatch):
     source_file = tmp_path / "patients.csv"
 
     source_file.write_text(
@@ -14,6 +14,13 @@ def test_reprocess_does_not_duplicate_records(tmp_path):
     )
 
     bronze_dir = tmp_path / "bronze"
+
+    test_log_file = tmp_path / "ingestion_log.csv"
+
+    monkeypatch.setattr(
+        "src.utils.ingestion_logger.LOG_FILE",
+        test_log_file,
+    )
 
     first_result = ingest_csv(
         source_file=source_file,
@@ -50,3 +57,5 @@ def test_reprocess_does_not_duplicate_records(tmp_path):
     assert second_result["rows_read"] == 2
 
     assert len(lines) == 3
+
+    assert test_log_file.exists()
