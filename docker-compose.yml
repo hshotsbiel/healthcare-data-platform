@@ -1,4 +1,4 @@
-x-airflow-common:
+﻿x-airflow-common:
   &airflow-common
   image: apache/airflow:3.1.0
   environment:
@@ -16,6 +16,8 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     AIRFLOW__CORE__EXECUTION_API_SERVER_URL: 'http://airflow-apiserver:8080/execution/'
     _PIP_ADDITIONAL_REQUIREMENTS: ''
+    DATABRICKS_HOST: 'https://dbc-fcc27a23-0f1e.cloud.databricks.com'
+    DATABRICKS_TOKEN: ${DATABRICKS_TOKEN:?Defina DATABRICKS_TOKEN no arquivo .env}
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/airflow/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
